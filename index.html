@@ -1,18 +1,308 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="keywords" content="">
-    <meta name="keywords" content="">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="" />
+    <meta name="keywords" content="" />
+    <meta name="keywords" content="" />
 
-    <link rel="icon" href="/images/icon.png" type="image/png">
+    <link rel="icon" href="/images/icon.png" type="image/png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Practico 2</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <h1>Resolucion de practico 2: Bucles</h1>
+      <hr />
+    </header>
+    <main>
+      <section>
+        <article>
+          <div>
+            <h2>Punto 1:</h2>
+            <p>
+              Escribir un programa que solicite la edad y si es mayor de 18
+              años mostrar un mensaje que ya puede conducir, si la edad
+              ingresada no es un número válido indicarlo en un mensaje.
+            </p>
+            <br />
+            <form name="form" method="get">
+              <label for="edad">Ingrese su edad: </label>
+              <input
+                type="number"
+                name="edad"
+                id="edad"
+                placeholder="25"
+                required
+              />
+              <button onclick="punto1()">Probar</button>
+            </form>
+          </div>
+          <br>
+          <div>
+            <h2>Respuesta: </h2>
+            <p id="respuestaPunto1"></p>
+          </div>
+          <br>
+          <hr />
+        </article>
+        <article>
+          <div>
+            <h2>Punto 2:</h2>
+            <p>
+              Escribir un programa que solicite una nota (número) de 0 a 10.
+              Luego mostrar la calificación en un alert según los siguientes
+              rangos de nota: 0-2: Muy deficiente 3-4: Insuficiente 5-6:
+              Suficiente 7: Bien 8-9: Notable 10: Sobresaliente Si ingreso un
+              número que no esté dentro del rango de 0 a 10 mostrar un mensaje
+              de “número erróneo”. Si el número ingresado no es válido mostrar
+              el mensaje “Introduce un número válido”.
+            </p>
+            <br />
+            <form name="form" method="get" action="">
+                <label for="nota">Ingrese una nota del 0 al 10: </label>
+                <input type="number" name="nota" id="nota" placeholder="7" required>
+            </form>
+            <button onclick="punto2()">Ver calificacion</button>
+          </div>
+          <div>
+            <h2>Respuesta: </h2>
+            <p id="respuestaPunto2"></p>
+          </div>
+          <br>
+          <hr>
+          <div>
+            <h2>Punto 3:</h2>
+            <p>
+              Realiza un script que pida cadenas de texto hasta que se pulse
+              “cancelar”. Al salir con “cancelar” deben mostrarse todas las
+              cadenas concatenadas con un guión -.
+            </p>
+            <br />
+            <button onclick="punto3()">Probar!</button>
+          </div>
+          <div>
+            <h2>Respuesta: </h2>
+            <p id="respuestaPunto3"></p>
+          </div>
+          <br>
+          <hr />
+          <div>
+            <h2>Punto 4:</h2>
+            <p>
+              Realiza un script que pida números hasta que se pulse “cancelar”.
+              Si no es un número deberá indicarse con un «alert» y seguir
+              pidiendo números. Al salir con “cancelar” deberá indicarse la suma
+              total de los números introducidos.
+            </p>
+            <br />
+          </div>
+          <div>
+            <h2>Respuesta: </h2>
+            <p id="respuestaPunto4"></p>
+          </div>
+          <br>
+          <hr />
+          <div>
+            <h2>Punto 5:</h2>
+            <p>
+              Realizar una página con un script que calcule el valor de la letra
+              de un número de DNI (Documento nacional de identidad). El
+              algoritmo para calcular la letra del dni es el siguiente : El
+              número debe ser entre 0 y 99999999 Debemos calcular el resto de la
+              división entera entre el número y el número 23. Según el
+              resultado, de 0 a 22, le corresponderá una letra de las
+              siguientes: (T, R, W, A, G, M, Y, F, P, D, X, B, N, J, Z, S, Q, V,
+              H, L, C, K, E) Si lo introducido no es un número deberá indicarse
+              con un alert y volver a preguntar. Deberá de repetirse el proceso
+              hasta que el usuario pulse «cancelar».
+            </p>
+            <br />
+          </div>
+          <div>
+            <h2>Respuesta: </h2>
+            <p id="respuestaPunto1"></p>
+          </div>
+          <br>
+          <hr />
+          <div>
+            <h2>Punto 6:</h2>
+            <p>
+                Realiza un script que escriba una pirámide del 1 al 30 de la siguiente forma :
+            </p>
+            <br />
+          </div>
+          <div>
+            <h2>Respuesta: </h2>
+            <p id="respuestaPunto1"></p>
+          </div>
+          <br>
+          <hr />
+          <div>
+            <h2>Punto 7:</h2>
+            <p>
+                Haz un script que escriba una pirámide inversa de los números del 1 al número
+                que indique el usuario (no mayor de 50) de la siguiente forma : (suponiendo que
+                indica 30).
+            </p>
+            <br />
+          </div>
+          <div>
+            <h2>Respuesta: </h2>
+            <p id="respuestaPunto1"></p>
+          </div>
+          <br>
+          <hr />
+          <div>
+            <h2>Punto 8:</h2>
+            <p>
+                Crea script para generar pirámide siguiente con los números del 1 al número
+                que indique el usuario (no mayor de 50)
+            </p>
+            <br />
+          </div>
+          <div>
+            <h2>Respuesta: </h2>
+            <p id="respuestaPunto1"></p>
+          </div>
+          <br>
+          <hr />
+          <div>
+            <h2>Punto 9:</h2>
+            <p>
+                Crea un script que escriba los números del 1 al 500, que indique cuáles son
+                múltiplos de 4 y de 9 y que cada 5 líneas muestre una línea horizontal.
+            </p>
+            <br />
+          </div>
+          <div>
+            <h2>Respuesta: </h2>
+            <p id="respuestaPunto1"></p>
+          </div>
+          <br>
+          <hr />
+          <div>
+            <h2>Punto 10:</h2>
+            <p>
+                Realiza un script que pida número de filas y columnas y escriba una tabla.
+                Dentro de cada una de las celdas deberá escribirse un número consecutivo en
+                orden descendente. Si, por ejemplo, la tabla es de 7×5 los números irán del 35 al 1.
+            </p>
+            <br />
+          </div>
+          <div>
+            <h2>Respuesta: </h2>
+            <p id="respuestaPunto1"></p>
+          </div>
+          <br>
+          <hr />
+          <div>
+            <h2>Punto 11:</h2>
+            <p>
+              Realiza un script que pida por teclado 3 edades y 3 nombres e
+              indique el nombre del mayor. *
+            </p>
+            <br />
+          </div>
+          <div>
+            <h2>Respuesta: </h2>
+            <p id="respuestaPunto1"></p>
+          </div>
+          <br>
+          <hr />
+          <div>
+            <h2>Punto 12:</h2>
+            <p>Realiza un script que genere un número aleatorio entre 1 y 99</p>
+            <br />
+          </div>
+          <div>
+            <h2>Respuesta: </h2>
+            <p id="respuestaPunto1"></p>
+          </div>
+          <br>
+          <hr />
+          <div>
+            <h2>Punto 13:</h2>
+            <p>
+              Realiza un script que pida un texto y lo muestre en mayúsculas.
+            </p>
+            <br />
+          </div>
+          <div>
+            <h2>Respuesta: </h2>
+            <p id="respuestaPunto1"></p>
+          </div>
+          <br>
+          <hr />
+          <div>
+            <h2>Punto 14:</h2>
+            <p>
+              Realiza un script que pida una cadena de texto y lo muestre
+              poniendo el signo – entre cada carácter sin usar el método
+              replace. Por ejemplo, si tecleo “hola qué tal”, deberá salir
+              “h-o-l-a- -q-u-e- -t-a-l”.
+            </p>
+            <br />
+          </div>
+          <div>
+            <h2>Respuesta: </h2>
+            <p id="respuestaPunto1"></p>
+          </div>
+          <br>
+          <hr />
+          <div>
+            <h2>Punto 15:</h2>
+            <p>
+              Realiza un script que cuente el número de vocales que tiene un
+              texto.
+            </p>
+            <br />
+          </div>
+          <div>
+            <h2>Respuesta: </h2>
+            <p id="respuestaPunto1"></p>
+          </div>
+          <br>
+          <hr />
+          <div>
+            <h2>Punto 16:</h2>
+            <p>
+              Realiza un script que pida una cadena de texto y la devuelva al
+              revés. Es decir, si tecleo “hola que tal” deberá mostrar “lat euq
+              aloh”.
+            </p>
+            <br />
+          </div>
+          <div>
+            <h2>Respuesta: </h2>
+            <p id="respuestaPunto1"></p>
+          </div>
+          <br>
+          <hr />
+          <div>
+            <h2>Punto 17:</h2>
+            <p>
+              Realiza un script que muestre la posición de la primera vocal de
+              un texto introducido por teclado.
+            </p>
+            <br />
+          </div>
+          <div>
+            <h2>Respuesta: </h2>
+            <p id="respuestaPunto1"></p>
+          </div>
+          <br>
+          <hr />
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Derechos Reservados</p>
+    </footer>
     <script src="js/resolucion.js"></script>
-</body>
+  </body>
 </html>
