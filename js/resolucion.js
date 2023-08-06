@@ -188,19 +188,34 @@ function punto6(){
 
 function punto7(){
         let tope = prompt("Ingrese un numero:");
+        let acumulador=0;
         for(let i=0; i<tope;i++){
-                while(i<=tope){
-                        document.getElementById("respuestaPunto7").innerHTML = tope-i;
+                while(acumulador<tope){
+                        document.getElementById("respuestaPunto7").innerHTML = tope - i;
+                        acumulador++;
                 }
         };        
 }
 
 function punto8(){
-        document.getElementById("respuestaPunto8").innerHTML = "Aun no esta definido...";
+        let numero8 = prompt("Ingrese un numero no mayor a 50:");
+        let acumulador8 = 1;
+        if(numero8 <= 50){
+                for(let i=1; i<=numero8;i++){
+                        while(acumulador8<=i){
+                                document.write(acumulador8);
+                                acumulador8++;
+                        }
+                        acumulador8=1;
+                        document.write('<br>');
+                }
+        }else{
+                alert('El dato ingresado es invalido, intente nuevamente.')
+        }
 }
 
 function punto9(){
-        document.getElementById("respuestaPunto9").innerHTML = "Aun no esta definido...";
+        document.getElementById("respuestaPunto9").innerHTML = "Aun no esta definido dos...";
 }
 
 function punto10(){
