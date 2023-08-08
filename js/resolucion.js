@@ -274,29 +274,97 @@ function punto10(){
 }
 
 function punto11(){
-        document.getElementById("respuestaPunto11").innerHTML = "Aun no esta definido...";
+        let nombrePer= [""];
+        let edadPer= [0];
+        let acumuladorPer= ["",0];
+
+        for (let i=0; i<3; i++){
+              nombrePer[i] = prompt(`Ingrese el ${i+1} nombre`);
+              edadPer[i] = prompt(`Ingrese la edad del ${nombrePer[i]}`);
+              if(edadPer[i]>acumuladorPer[1]){
+                      acumuladorPer[0] = nombrePer[i];
+                      acumuladorPer[1] = edadPer[i];
+              };
+        }
+        alert(`${acumuladorPer[0]} es el mayor de los 3`);
 }
 
 function punto12(){
-        document.getElementById("respuestaPunto12").innerHTML = "Aun no esta definido...";
+        let numeroR=Math.floor(Math.random()*(99-1)+1);
+        alert(`${numeroR}`)
+        // document.getElementById("respuestaPunto12").innerHTML = "Aun no esta definido...";
 }
 
 function punto13(){
-        document.getElementById("respuestaPunto13").innerHTML = "Aun no esta definido...";
+        let textom = (prompt("Ingrese un texto:")).toUpperCase();
+        //let textoM = textom.toUpperCase();
+        alert(`${textom}`);
+        //alert(`${textoM}`);
+
+        // document.getElementById("respuestaPunto13").innerHTML = "Aun no esta definido...";
 }
 
 function punto14(){
-        document.getElementById("respuestaPunto14").innerHTML = "Aun no esta definido...";
+        let textoIng=prompt("Ingrese un texto: ");
+        let textoEdi= "";
+        for (let letra of textoIng){
+                textoEdi= textoEdi + letra + "-";
+        }
+        alert(`${textoEdi}`);
+        //document.getElementById("respuestaPunto14").innerHTML = "Aun no esta definido...";
 }
 
 function punto15(){
-        document.getElementById("respuestaPunto15").innerHTML = "Aun no esta definido...";
+        let textoOri = prompt("Ingrese un texto: ");
+        let acumulador15 = [];
+        //let total= 0;
+        for (let letra of textoOri){
+                switch(letra){
+                        case 'a':
+                                acumulador15.push("a");
+                                break;
+                        case 'e':
+                                acumulador15.push("e");
+                                break;
+                        case 'i':
+                                acumulador15.push("i");
+                                break;
+                        case 'o':
+                                acumulador15.push("o");
+                                break;
+                        case 'u':
+                                acumulador15.push("u");
+                                break;
+                        default:
+                                break;
+                };
+
+                //total = acumulador15.length;
+        }
+        alert(`En el texto hay ${acumulador15.length} vocales.`);
+        //document.getElementById("respuestaPunto15").innerHTML = "Aun no esta definido...";
 }
 
 function punto16(){
-        document.getElementById("respuestaPunto16").innerHTML = "Aun no esta definido...";
+        // let oracion=prompt("Ingrese una oracion:");
+        // let array=oracion.split(',');
+        // let noicaro = (array.reverse()).join('');
+        // alert(`${noicaro}`);
+
+        let oracion = "Ingrese una oracion:";
+        let array = [...oracion];
+        let noicaron = array.reverse();
+        let resultado="";
+        for (let letra of noicaron){
+                resultado = resultado + letra;
+        }
+        console.log(`${resultado}`);
+
+       // document.getElementById("respuestaPunto16").innerHTML = "Aun no esta definido...";
 }
 
 function punto17(){
-        document.getElementById("respuestaPunto17").innerHTML = "Aun no esta definido...";
+        
+
+        // document.getElementById("respuestaPunto17").innerHTML = "Aun no esta definido...";
 }
