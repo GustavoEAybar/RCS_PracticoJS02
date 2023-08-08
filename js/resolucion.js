@@ -1,13 +1,11 @@
 function punto1 (){
-
         let edad = prompt("Ingrese su edad: ");
-
         if (edad>18){
-                document.write('Puede manejar');
-        }else if (edad<18){
-                document.write('No puede manejar');
+                alert('Puede manejar');
+        }else if (edad<=18){
+                alert('No puede manejar');
         }else{
-                document.write('Este no es un dato valido!');
+                alert('Este no es un dato valido!');
         }; 
 }
 
