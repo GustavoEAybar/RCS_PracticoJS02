@@ -55,7 +55,8 @@ function punto3(){
 
         }while(confirm('ingresar otra cadena de texto?')==true)
 
-        document.write(cadenaTotal);
+        alert(cadenaTotal);
+        //document.write(cadenaTotal);
 };
 
 function punto4(){
@@ -69,7 +70,8 @@ function punto4(){
                         alert("No es un numero");
                 }
         }while(confirm('ingresar otro numero?')==true)
-        document.write(`La suma de los numeros ingresados es ${sumaDeNumeros}`);
+        alert(`La suma de los numeros ingresados es ${sumaDeNumeros}`);
+        // document.write(`La suma de los numeros ingresados es ${sumaDeNumeros}`);
 }
 
 function punto5(){
