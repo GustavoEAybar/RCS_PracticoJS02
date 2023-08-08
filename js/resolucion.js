@@ -364,7 +364,13 @@ function punto16(){
 }
 
 function punto17(){
-        
-
+        let texto17=prompt("Ingrese un texto: ");
+        let array17 = [...texto17];
+        for (let i=0; i < array17.length; i++){
+                if (array17[i]=='a' || array17[i]=='e' || array17[i]=='i' || array17[i]=='o' || array17[i]=='u'){
+                        alert(`la primera vocal es la "${array17[i]}" y se encuentra en la posicion ${i+1}`);
+                        break;
+                }
+        }
         // document.getElementById("respuestaPunto17").innerHTML = "Aun no esta definido...";
 }
